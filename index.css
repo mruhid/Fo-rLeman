@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 30px 0px;
+  border-bottom: 1px solid rgb(217, 222, 232);
+}
+header .logo-img {
+  width: 270px;
+  height: 50px;
+}
+header .logo-img img {
+  width: 100%;
+  height: 100%;
+}
+header form {
+  position: relative;
+}
+header form input {
+  background: rgb(240, 242, 245);
+  color: rgb(91, 108, 143);
+  font-size: 17px;
+  border-radius: 60px;
+  padding: 10px 25px;
+  line-height: 26px;
+  text-align: left;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  border: 1px solid transparent;
+}
+header form .fa-magnifying-glass {
+  position: absolute;
+  right: 0;
+  left: 599px;
+  top: 14px;
+  color: rgb(91, 108, 143);
+}
+header .aaa {
+  position: relative;
+}
+header .icons {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 28px;
+}
+header .icons .fa-user,
+header .icons .fa-cart-shopping {
+  cursor: pointer;
+  font-size: 20px;
+  color: orange;
+  transition: 0.2s ease-in-out;
+}
+header .icons .fa-user:hover,
+header .icons .fa-cart-shopping:hover {
+  color: rgb(16, 49, 120);
+}
+header .icons .fa-user {
+  transition: 0.2s ease-in-out;
+}
+header .icons .fa-user:hover .user {
+  display: block;
+}
+header .icons .fa-user .user {
+  position: absolute;
+  top: 53px;
+  left: -110px;
+  right: 0;
+  display: none;
+  max-width: 300px;
+  height: 330px;
+  padding: 35px 30px 30px 30px;
+  border-color: rgb(240, 242, 245);
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+header .icons .fa-user .user form label {
+  font-size: 17px;
+  color: rgb(91, 108, 143);
+  margin: 10px 0px 15px;
+}
+header .icons .fa-user .user form .check label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+header .icons .fa-user .user form .check label input {
+  width: 13px;
+}
+header .icons .fa-user .user form button {
+  background: rgb(255, 153, 35);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 14px 25px;
+  font-size: 17px;
+  border-radius: 60px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+header .icons .fa-cart-shopping:hover .sebet {
+  display: flex;
+}
+header .icons .fa-cart-shopping .sebet {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 53px;
+  left: -150px;
+  right: 0;
+  width: 420px;
+  height: 270px;
+  border-color: rgb(240, 242, 245);
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+header .icons .fa-cart-shopping .sebet .fa-basket-shopping {
+  opacity: 0.1;
+  color: rgb(91, 108, 143);
+  margin: 0px 0px 20px;
+  font-size: 100px;
+}
+header .icons .fa-cart-shopping .sebet label {
+  color: rgb(91, 108, 143);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgb(217, 222, 232);
+  background-color: rgb(255, 255, 255);
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0px;
+}
+nav ul li {
+  position: relative;
+  list-style: none;
+}
+nav ul li .fa-bars {
+  padding-right: 5px;
+}
+nav ul li .fa-chevron-down {
+  cursor: pointer;
+  position: relative;
+  padding-left: 5px;
+  font-size: 10px;
+}
+nav ul li .fa-chevron-down:hover .language {
+  display: block;
+  z-index: 900;
+}
+nav ul li .fa-chevron-down .language {
+  display: none;
+  position: absolute;
+  top: 17px;
+  left: -98px;
+  right: 0;
+  border-color: rgb(240, 242, 245);
+  width: 220px;
+  height: 214px;
+  padding: 40px 40px 30px 40px;
+  border-color: rgb(240, 242, 245);
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav ul li .fa-chevron-down .language ul {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 10px;
+}
+nav ul li .fa-chevron-down .language ul li {
+  cursor: pointer;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 100;
+  color: #103178;
+}
+nav ul li .fa-chevron-down .language ul li:hover {
+  color: rgb(255, 153, 35);
+}
+nav ul li a {
+  text-decoration: none;
+  color: #103178;
+  transition: 0.2s ease-in-out;
+}
+nav ul li a:hover {
+  color: rgb(255, 153, 35);
+}
+nav p {
+  color: rgb(91, 108, 143);
+  text-align: end;
+  padding: 18px 0px;
+}
+
+#swiper {
+  margin: 50px 0px;
+}
+#swiper #carouselExample .carousel-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#swiper #carouselExample .carousel-item img {
+  width: 100%;
+}
+#swiper .left-img {
+  text-align: center;
+}
+#swiper .left-img img {
+  max-width: 273px;
+  height: 91px;
+  margin-bottom: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#swiper .bestseller {
+  text-align: center;
+  margin: 20px 0px;
+}
+#swiper .bestseller img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 1140px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+#az-books h2, #ofis-defterxana h2 {
+  color: rgb(16, 49, 120);
+  text-align: center;
+  font-size: 30px;
+  padding: 21px 0px;
+}
+#az-books .books, #ofis-defterxana .books {
+  border: 1px solid rgb(240, 242, 245);
+}
+#az-books .books .full-card, #ofis-defterxana .books .full-card {
+  border-right: 1px solid rgb(240, 242, 245);
+  text-align: center;
+  margin-bottom: 20px;
+}
+#az-books .books .card-img, #ofis-defterxana .books .card-img {
+  position: relative;
+  margin-top: 21px;
+  max-width: 191px;
+  height: 212px;
+}
+#az-books .books .card-img:hover .btns, #ofis-defterxana .books .card-img:hover .btns {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+#az-books .books .card-img p, #ofis-defterxana .books .card-img p {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: 10px;
+  color: rgb(255, 255, 255);
+  background: rgb(18, 160, 92);
+  max-width: 40px;
+  text-align: center;
+  font-size: 12px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 20px;
+}
+#az-books .books .card-img .btns, #ofis-defterxana .books .card-img .btns {
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 5px;
+  opacity: 0;
+}
+#az-books .books .card-img .btns button, #ofis-defterxana .books .card-img .btns button {
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: rgb(240, 242, 245);
+  color: rgb(16, 49, 120);
+  border: none;
+  border: 1px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+#az-books .books .card-img .btns button:hover, #ofis-defterxana .books .card-img .btns button:hover {
+  color: rgb(255, 153, 35);
+}
+#az-books .books .card-img img, #ofis-defterxana .books .card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#az-books .books h3, #ofis-defterxana .books h3 {
+  color: #103178;
+  font-size: 16px;
+  min-height: 73px;
+  margin-top: 15px;
+}
+#az-books .books span .qiymet, #ofis-defterxana .books span .qiymet {
+  color: #103178;
+}
+#az-books .books span del, #ofis-defterxana .books span del {
+  color: red;
+}
+#az-books .small-img, #ofis-defterxana .small-img {
+  margin: 60px 0px 40px;
+  max-width: 100%;
+  height: 106px;
+}
+#az-books .small-img img, #ofis-defterxana .small-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#ofis-defterxana {
+  background-color: #fdf6ed;
+  margin: 82px 0px;
+  padding-bottom: 21px;
+}
+
+#catdirilma {
+  margin-bottom: 50px;
+}
+#catdirilma .rekvizit {
+  background-color: rgb(240, 242, 245);
+}
+#catdirilma .rekvizit .mmm {
+  border-left: 1px solid rgba(16, 49, 120, 0.1);
+  border-right: 1px solid rgba(16, 49, 120, 0.1);
+}
+#catdirilma .rekvizit .bank {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 0px;
+}
+#catdirilma .rekvizit .bank .img {
+  width: 20px;
+  height: 20px;
+}
+#catdirilma .rekvizit .bank .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#catdirilma .rekvizit .bank h4 {
+  color: #103178;
+  font-size: 16px;
+}
+
+footer {
+  border-bottom: 1px solid rgb(240, 242, 245);
+  padding: 50px 0px;
+}
+footer .adress {
+  border-right: 1px solid rgb(240, 242, 245);
+}
+footer .adress .logo {
+  max-width: 216px;
+  height: 40px;
+}
+footer .adress .logo img {
+  width: 100%;
+  height: 100%;
+}
+footer .adress p {
+  text-align: left;
+  color: #5b6c8f;
+  font-size: 16px;
+  margin: 30px 0px 15px;
+}
+footer .adress a {
+  color: #5b6c8f;
+  font-size: 14px;
+}
+footer .adress .social {
+  margin-top: 30px;
+}
+footer .adress .social i {
+  color: #5b6c8f;
+  font-size: 18px;
+  margin-right: 10px;
+}
+footer .communication h5 {
+  color: #103178;
+  font-size: 18px;
+  margin: 0px 0px 20px;
+}
+footer .communication h3 {
+  color: #103178;
+  font-size: 24px;
+}
+footer .communication h3 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .communication a {
+  color: #103178;
+  font-size: 16px;
+  text-decoration: none;
+}
+footer .communication a img {
+  margin-right: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .communication form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+footer .communication form label {
+  color: #5b6c8f;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .communication form input {
+  background-color: #f0f2f5;
+  border-radius: 60px;
+  border: none;
+  border: 1px solid transparent;
+  padding: 5px 0px;
+}
+footer .communication form button {
+  background: rgb(255, 153, 35);
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  border-radius: 60px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+footer .communication form button:hover {
+  border-color: rgb(255, 153, 35);
+  background: rgb(255, 255, 255);
+  color: rgb(255, 153, 35);
+}
+footer h3 {
+  font-size: 18px;
+  margin: 0px 0px 20px;
+  color: #103178;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  padding: 6px 0px;
+}
+footer ul li a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  color: #103178;
+}
+footer ul li a:hover {
+  color: rgb(255, 153, 35);
+}
+
+#end {
+  padding: 25px 0px;
+}
+#end p {
+  font-size: 16px;
+  color: #103178;
+}
+#end .kredit {
+  max-width: 480px;
+  height: 40px;
+  margin: 0px auto;
+}
+#end .kredit img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
