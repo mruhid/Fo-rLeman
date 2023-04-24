@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitab Evim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../src/scss/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="logo-img">
+              <img
+                src="https://kitabevim.az/wp-content/uploads/2021/02/kitabevim_logo.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form action="">
+              <input type="text" placeholder="Məhsullarda axtarış" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+          </div>
+          <div class="col-lg-2 aaa">
+            <div class="icons">
+              <i class="fa-regular fa-user">
+                <div class="user">
+                  <form action="">
+                    <label for="">Username or Email Address</label>
+                    <input type="text" />
+                    <label for="">Parol</label>
+                    <input type="text" />
+
+                    <div class="check">
+                      <label for="">
+                        <input type="checkbox" name="" id="" />
+                        Məni unutma
+                      </label>
+                    </div>
+                    <button>Giriş</button>
+                  </form>
+                </div>
+              </i>
+              <i class="fa-solid fa-cart-shopping">
+                <div class="sebet">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                  <br />
+                  <label for="">Səbətiniz boşdur</label>
+                </div>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <ul>
+              <li>
+                <i class="fa-solid fa-bars"></i><a href="">Menyu</a
+                ><i class="fa-solid fa-chevron-down"></i>
+                <!-- <div class="menyu_dropdown">
+     <ul class="menu">
+            <li><a href="">Kitablar</a></li>
+            <li><a href="">Dərgilər</a></li>
+            <li><a href="">Çantalar</a></li>
+         </ul>
+           <ul class="menu">
+            <li><a href="">Hədiyyəlik</a></li>
+            <li><a href="">Ofis və Dəftərxana</a></li>
+            <li><a href="">Puzzle</a></li>
+         </ul>
+                <ul class="menu">
+            <li><a href="">Bestseller</a></li>
+            <li><a href="">Bloknot</a></li>
+            <li><a href="">Stolüstü set</a></li>
+         </ul>
+          <ul class="menu">
+            <li><a href="">Oyuncaq</a></li>
+            <li><a href="">E-kitab</a></li>
+            <li><a href="">Səsli kitab</a></li>
+         </ul>
+</div> -->
+              </li>
+
+              <li>
+                <a href="">Kitablar</a
+                ><i class="fa-solid fa-chevron-down">
+                  <div class="language">
+                    <ul>
+                      <li>Azərbaycan</li>
+                      <li>Türk</li>
+                      <li>İngilis</li>
+                      <li>Rus</li>
+                    </ul>
+                  </div>
+                </i>
+              </li>
+              <li><a href="">Dəftərxana</a></li>
+              <li><a href="">Çantalar</a></li>
+              <li><a href="">Hədiyyəlik</a></li>
+              <li><a href="">Haqqımızda</a></li>
+              <li><a href="">Online ödəniş</a></li>
+              <li><a href="">Əlaqə</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <p>Əlaqə: <strong>+99455 8772444</strong></p>
+          </div>
+        </div>
+
+        <!-- <div class="menyu_dropdown">
+   <div class="row">
+          
+      <div class="col-lg-3">
+         <ul>
+            <li><a href="">Kitablar</a></li>
+            <li><a href="">Dərgilər</a></li>
+            <li><a href="">Çantalar</a></li>
+         </ul>
+      </div>
+      <div class="col-lg-3">
+           <ul>
+            <li><a href="">Hədiyyəlik</a></li>
+            <li><a href="">Ofis və Dəftərxana</a></li>
+            <li><a href="">Puzzle</a></li>
+         </ul>
+      </div>
+      <div class="col-lg-3">
+           <ul>
+            <li><a href="">Bestseller</a></li>
+            <li><a href="">Bloknot</a></li>
+            <li><a href="">Stolüstü set</a></li>
+         </ul>
+      </div>
+      <div class="col-lg-3">
+           <ul>
+            <li><a href="">Oyuncaq</a></li>
+            <li><a href="">E-kitab</a></li>
+            <li><a href="">Səsli kitab</a></li>
+         </ul>
+      </div>
+      </div>
+   </div> -->
+      </div>
+    </nav>
+
+    <main>
+<section id="swiper">
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://static.insales-cdn.com/files/1/2657/27716193/original/1__6__3c210e3042ce78f4329eeb7f90c18cfe.png" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://static.insales-cdn.com/files/1/3278/27618510/original/3__1__a6d350e0fce421f1cfca1eb4bae5ce13.png" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://static.insales-cdn.com/files/1/567/26845751/original/8_5bde5fc79b627f2c987d82f60a1d3c69.png" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://static.insales-cdn.com/files/1/2289/26700017/original/1__2__519a53d10a105782b3e61d3f5d4b7a9e.png" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+      <div class="col-lg-4">
+        <div class="left-img">
+         <img src="https://static.insales-cdn.com/files/1/2604/26364460/original/1__1__48ad692d3a89bc0f738dd3bbd2bdffbe.png" alt="">
+         <img src="https://static.insales-cdn.com/files/1/1099/25035851/original/1__1__4a0b1c926e430bcabe5742d672ea0ac9_2dcbf709eaded9732c4abe07f88f3083.png" alt="">
+         <img src="https://static.insales-cdn.com/files/1/6254/19290222/original/2__5__b3bbb271d468cc65631abaa2043be532.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bestseller">
+          <img src="https://static.insales-cdn.com/files/1/3966/27488126/original/bestseller.png" alt="">
+          <img src="https://static.insales-cdn.com/files/1/3970/27488130/original/lego_az_97d2e7da38a2e1fb68750b27870cc71a.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <section id="az-books">
+        <h2>Azərbaycan dilində kitablar</h2>
+
+        <div class="container">
+          <div class="row books">
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-18-14-37-281681814248-300x385.jpg"
+                  alt=""
+                />
+              </div>
+                <h3>Çuxurlar, Lui Saker</h3>
+                <span>
+                  <span class="qiymet">8.50 azn</span>
+                  <del>10.00 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-17-18-17-371681741057-300x385.jpg"
+                />
+              </div>
+                <h3>Anadolu Fatehi Sultan Alp Arslan, Yusuf Dursun</h3>
+                <span>
+                  <span>4.67 azn</span>
+                  <del>5.49 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-17-17-20-501681737650-300x385.jpg"
+                  alt=""
+                /> </div>
+                <h3>Dəyirman, Mövlud Süleymanlı</h3>
+                <span>
+                  <span>8.49 azn</span>
+                  <del>9.99 azn</del>
+                </span>
+             
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="	https://kitabevim.az/wp-content/uploads/2023/04/get-product-image-3-300x385.jpg"
+                  alt=""
+                />
+                 </div>
+                <h3>Məktubunuz var! , Əziz Yaqubzadə</h3>
+                <span>
+                  <span>8.50 azn</span>
+                  <del>10.00 azn</del>
+                </span>
+           
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/66-300x385.jpg"
+                  alt=""
+                /> 
+               </div>
+                <h3>Masalın İstanbul Macəraları Qalata, Ece Erdoğuş Levi</h3>
+                <span>
+                  <span>5.10 azn</span>
+                  <del>6.00 azn</del>
+                </span>
+            
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/get-product-image-1-300x385.jpg"
+                  alt=""
+                />  </div>
+                <h3>Tanrı, Emin İmanlı</h3>
+                <span>
+                  <span>11.90 azn</span>
+                  <del>14.00 azn</del>
+                </span>
+            
+            </div>
+          </div>
+
+          <div class="small-img">
+            <img
+              src="https://kitabevim.az/wp-content/uploads/2021/04/hediyyelik1.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section id="az-books">
+        <h2>Türk dilində kitablar</h2>
+
+        <div class="container">
+          <div class="row books">
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="	https://kitabevim.az/wp-content/uploads/2023/04/0000000718825-1-300x385.jpg"
+                  alt=""
+                />
+              </div>
+                <h3>Dalgalar, Virginia Woolf</h3>
+                <span>
+                  <span class="qiymet">5.78 azn</span>
+                  <del>6.80 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/0000000428161-1-300x385.jpg"
+                />
+              </div>
+                <h3>Beynine Format At, M. Barış Muslu</h3>
+                <span>
+                  <span>12.58 azn</span>
+                  <del>14.80 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/0001987058001-1-300x385.jpg"
+                  alt=""
+                /> </div>
+                <h3>Yıka Beynini, M. Barış Muslu</h3>
+                <span>
+                  <span>17.00 azn</span>
+                  <del>20.00 azn</del>
+                </span>
+             
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="	https://kitabevim.az/wp-content/uploads/2023/04/0002016030001-1-300x385.jpg"
+                  alt=""
+                />
+                 </div>
+                <h3>Daire 7, Beyza Alkoç</h3>
+                <span>
+                  <span>11.90 azn</span>
+                  <del>14.00 azn</del>
+                </span>
+           
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="	https://kitabevim.az/wp-content/uploads/2023/04/110000061649827-300x385.jpg"
+                  alt=""
+                /> 
+               </div>
+                <h3>Dava, Franz Kafka</h3>
+                <span>
+                  <span>7.48 azn</span>
+                  <del>8.80 azn</del>
+                </span>
+            
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="	https://kitabevim.az/wp-content/uploads/2023/04/0002006908001-1-300x385.jpg"
+                  alt=""
+                />  </div>
+                <h3>Vazgeçilmez Olmanın Sırrı, Esra Ezmeci</h3>
+                <span>
+                  <span>9.35 azn</span>
+                  <del>11.00 azn</del>
+                </span>
+            
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="az-books">
+        <h2>Rus dilində kitablar</h2>
+
+        <div class="container">
+          <div class="row books">
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-18-14-37-281681814248-300x385.jpg"
+                  alt=""
+                />
+              </div>
+                <h3>Çuxurlar, Lui Saker</h3>
+                <span>
+                  <span class="qiymet">8.50 azn</span>
+                  <del>10.00 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-17-18-17-371681741057-300x385.jpg"
+                />
+              </div>
+                <h3>Anadolu Fatehi Sultan Alp Arslan, Yusuf Dursun</h3>
+                <span>
+                  <span>4.67 azn</span>
+                  <del>5.49 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-17-17-20-501681737650-300x385.jpg"
+                  alt=""
+                /> </div>
+                <h3>Dəyirman, Mövlud Süleymanlı</h3>
+                <span>
+                  <span>8.49 azn</span>
+                  <del>9.99 azn</del>
+                </span>
+             
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="	https://kitabevim.az/wp-content/uploads/2023/04/get-product-image-3-300x385.jpg"
+                  alt=""
+                />
+                 </div>
+                <h3>Məktubunuz var! , Əziz Yaqubzadə</h3>
+                <span>
+                  <span>8.50 azn</span>
+                  <del>10.00 azn</del>
+                </span>
+           
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/66-300x385.jpg"
+                  alt=""
+                /> 
+               </div>
+                <h3>Masalın İstanbul Macəraları Qalata, Ece Erdoğuş Levi</h3>
+                <span>
+                  <span>5.10 azn</span>
+                  <del>6.00 azn</del>
+                </span>
+            
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/get-product-image-1-300x385.jpg"
+                  alt=""
+                />  </div>
+                <h3>Tanrı, Emin İmanlı</h3>
+                <span>
+                  <span>11.90 azn</span>
+                  <del>14.00 azn</del>
+                </span>
+            
+            </div>
+          </div>
+
+          <div class="small-img">
+            <img
+              src="https://kitabevim.az/wp-content/uploads/2021/04/hediyyelik2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>    
+      <section id="az-books">
+        <h2>Uşaq ədəbiyyatı</h2>
+
+        <div class="container">
+          <div class="row books">
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-18-14-37-281681814248-300x385.jpg"
+                  alt=""
+                />
+              </div>
+                <h3>Çuxurlar, Lui Saker</h3>
+                <span>
+                  <span class="qiymet">8.50 azn</span>
+                  <del>10.00 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-17-18-17-371681741057-300x385.jpg"
+                />
+              </div>
+                <h3>Anadolu Fatehi Sultan Alp Arslan, Yusuf Dursun</h3>
+                <span>
+                  <span>4.67 azn</span>
+                  <del>5.49 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-17-17-20-501681737650-300x385.jpg"
+                  alt=""
+                /> </div>
+                <h3>Dəyirman, Mövlud Süleymanlı</h3>
+                <span>
+                  <span>8.49 azn</span>
+                  <del>9.99 azn</del>
+                </span>
+             
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="	https://kitabevim.az/wp-content/uploads/2023/04/get-product-image-3-300x385.jpg"
+                  alt=""
+                />
+                 </div>
+                <h3>Məktubunuz var! , Əziz Yaqubzadə</h3>
+                <span>
+                  <span>8.50 azn</span>
+                  <del>10.00 azn</del>
+                </span>
+           
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/66-300x385.jpg"
+                  alt=""
+                /> 
+               </div>
+                <h3>Masalın İstanbul Macəraları Qalata, Ece Erdoğuş Levi</h3>
+                <span>
+                  <span>5.10 azn</span>
+                  <del>6.00 azn</del>
+                </span>
+            
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/get-product-image-1-300x385.jpg"
+                  alt=""
+                />  </div>
+                <h3>Tanrı, Emin İmanlı</h3>
+                <span>
+                  <span>11.90 azn</span>
+                  <del>14.00 azn</del>
+                </span>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ofis-defterxana" style="background-image: url(https://demo.theme-sky.com/mymedi-import/wp-content/uploads/2020/08/rounds.png?id=16757);">
+        <h2>Ofis və Dəftərxana</h2>
+
+        <div class="container">
+          <div class="row books">
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-18-14-37-281681814248-300x385.jpg"
+                  alt=""
+                />
+              </div>
+                <h3>Çuxurlar, Lui Saker</h3>
+                <span>
+                  <span class="qiymet">8.50 azn</span>
+                  <del>10.00 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-17-18-17-371681741057-300x385.jpg"
+                />
+              </div>
+                <h3>Anadolu Fatehi Sultan Alp Arslan, Yusuf Dursun</h3>
+                <span>
+                  <span>4.67 azn</span>
+                  <del>5.49 azn</del>
+                </span>
+              
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/2023-04-17-17-20-501681737650-300x385.jpg"
+                  alt=""
+                /> </div>
+                <h3>Dəyirman, Mövlud Süleymanlı</h3>
+                <span>
+                  <span>8.49 azn</span>
+                  <del>9.99 azn</del>
+                </span>
+             
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="	https://kitabevim.az/wp-content/uploads/2023/04/get-product-image-3-300x385.jpg"
+                  alt=""
+                />
+                 </div>
+                <h3>Məktubunuz var! , Əziz Yaqubzadə</h3>
+                <span>
+                  <span>8.50 azn</span>
+                  <del>10.00 azn</del>
+                </span>
+           
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/66-300x385.jpg"
+                  alt=""
+                /> 
+               </div>
+                <h3>Masalın İstanbul Macəraları Qalata, Ece Erdoğuş Levi</h3>
+                <span>
+                  <span>5.10 azn</span>
+                  <del>6.00 azn</del>
+                </span>
+            
+            </div>
+            <div class="col-lg-2 full-card">
+              <div class="card-img">
+                <p>Yeni</p>
+                <div class="btns">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+                <img
+                  src="https://kitabevim.az/wp-content/uploads/2023/04/get-product-image-1-300x385.jpg"
+                  alt=""
+                />  </div>
+                <h3>Tanrı, Emin İmanlı</h3>
+                <span>
+                  <span>11.90 azn</span>
+                  <del>14.00 azn</del>
+                </span>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+  <section id="catdirilma">
+    <div class="container">
+      <div class="row rekvizit">
+        <div class="col-lg-4">
+          <div class="bank">
+            <div class="img">
+              <img src="https://kitabevim.az/wp-content/uploads/2020/08/wallet.png" alt="">
+            </div>
+          
+            <h4>Bank rekvizitləri</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 mmm ">
+          <div class="bank">
+            <div class="img">
+              <img src="	https://kitabevim.az/wp-content/uploads/2020/08/package.png" alt="">
+            </div>
+          
+            <h4>Bakıdaxili və bölgələrə çatdırılma</h4>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="bank">
+            <div class="img">
+              <img src="https://kitabevim.az/wp-content/uploads/2020/08/truck.png" alt="">
+            </div>
+          
+            <h4>Çatdırılma şərtləri</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="adress">
+              <div class="logo">
+                <img src="https://kitabevim.az/wp-content/uploads/2021/02/kitabevim_logo.png" alt="">
+              </div>
+              <p>28 may Puşkin k., 32A Bakı, 1009</p>
+              <a href="">Xəritədə bax</a>
+              <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="communication">
+              <h5>Bizimlə əlaqə</h5>
+              <h3><img src="	https://kitabevim.az/wp-content/uploads/2020/10/phone-icon.png" alt=""> +99412 4987989</h3>
+              <hr>
+              <a href="">
+                <img src="https://kitabevim.az/wp-content/uploads/2020/10/mail.png" alt="">
+                info@kitabevim.az
+              </a>
+
+              <form action="">
+                <label for="">E-poçt daxil et*</label>
+                <input type="text">
+              <button>Xəbərdar ol!</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-lg-4">
+                <h3>Məlumat</h3>
+                <ul>
+                  <li><a href="">Haqqımızda</a></li>
+                  <li><a href="">Şöbələrimiz</a></li>
+                  <li><a href="">Kitab xəbər</a></li>
+                  <li><a href="">Çatdırılma şərtləri</a></li>
+                  <li><a href="">Gizlilik şərtləri</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h3>Hesabım</h3>
+                <ul>
+                  <li><a href="">Hesabım</a></li>
+                  <li><a href="">Sifarişlər</a></li>
+                  <li><a href="">Yükləmələr</a></li>
+                  <li><a href="">Ünvan məlumatları</a></li>
+                  <li><a href="">Hesab detalları</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h3>Mağaza</h3>
+                <ul>
+                  <li><a href="">Bank rekvizitləri</a></li>
+                  <li><a href="">Sifarişi izlə</a></li>
+                  <li><a href="">Necə sifariş edə bilərəm?</a></li>
+                  <li><a href="">Səbət</a></li>
+                  <li><a href="">Bütün məhsullar</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </footer>
+    <section id="end">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p>Copyright © 2023 Kitabevim.az. Bütün hüquqları qorunur</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="kredit">
+              <img src="	https://kitabevim.az/wp-content/uploads/2023/01/payment_new-1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4803176f5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
